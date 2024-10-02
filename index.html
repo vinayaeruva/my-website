@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinay Aeruva</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="loader-screen"></div>
+    <img src="./public/blur-bg.png" aria-hidden="true" alt="" class="blur-bg" />
+
+    <header class="header">
+
+      <img class="nav-logo" src="vinaylogo.jpeg" alt="Prem's logo" />
+
+      <nav class="nav">
+          <nav>
+              <a href="education.html">Education</a>
+              <a href="experience.html">Experience</a>
+              <a href="https://www.linkedin.com/in/vinay-aeruva-8361461a0/" target="#">LinkedIn</a>
+              <a href="contact.html">Contact me</a>
+          </nav>
+      </nav>
+    </header>
+
+    <header class="header-mobile">
+      <img class="nav-logo" src="vinaylogo.jpeg" alt="Prem's logo" />
+        <button class="hamburger" aria-label="Open menu">
+        <img src="/public/media/burger.svg" alt="" />
+      </button>
+    </header>
+
+    <main class="main">
+      <article class="wrapper wrapper-mobile">
+        <div class="marquee">
+          <div aria-hidden="true" class="marquee__group">
+            <img src="/public/media/marquee-item.png" alt="" />
+            <img src="/public/media/marquee-item-2.png" alt="" />
+            <img src="/public/media/marquee-item-3.png" alt="" />
+            <img src="/public/media/marquee-item-4.png" alt="" />
+            <img src="/public/media/marquee-item-5.png" alt="" />
+            <img src="/public/media/marquee-item-6.png" alt="" />
+            <img src="/public/media/marquee-item-5.png" alt="" />
+            <img src="/public/media/marquee-item-4.png" alt="" />
+            <img src="/public/media/marquee-item-3.png" alt="" />
+            <img src="/public/media/marquee-item-2.png" alt="" />
+            <img src="/public/media/marquee-item.png" alt="" />
+          </div>
+        </div>
+      </article>
+
+      <article class="wrapper">
+        <div class="marquee">
+          <div aria-hidden="true" class="marquee__group">
+            <img src="JavaScript-logo.png" alt="" />
+            <img src="html.png" alt="" />
+            <img src="javalogo.png" alt="" />
+            <img src="csslogo.jpeg" alt="" />
+            <img src="springlogo.png" alt="" />
+            <img src="databaselogo.jpeg" alt="" />
+            <img src="mysqllogo.png" alt="" />
+            <img src="mongodblogo.png" alt="" />
+            <img src="githublogo.jpeg" alt="" />
+            <img src="gitlogo.jpeg" alt="" />
+            <img src="redislogo.png" alt="" />
+          </div>
+        </div>
+      </article>
+
+      <article class="wrapper wrapper-right">
+        <div class="marquee">
+          <div aria-hidden="true" class="marquee__group">
+            <img src="typescriptlogo.png" alt="" />
+            <img src="angularlogo.png" alt="" />
+            <img src="jsonlogo.png" alt="" />
+            <img src="docker.png" alt="" />
+            <img src="jenkinslogo.jpeg" alt="" />
+            <img src="seleniumlogo.jpeg" alt="" />
+            <img src="jiralogo.png" alt="" />
+
+          </div>
+        </div>
+      </article>
+      <div class="main-center">
+        <h1 class="headline-1">VINAY</h1>
+        <h1 class="headline-2">  </h1>
+        <h1 class="headline-3">AERUVA</h1>
+      </div>
+
+
+      <div class="main-bottom">
+        <div class="main-bottom-left">
+          <button class="explore-catalog-btn">
+            <span class="explore-catalog-btn-label">
+                 <a href="aboutme.html">About me</a>
+              <span class="label-line"></span>
+            </span>
+          </button>
+
+
+          <div class="separator"></div>
+
+          <p class="landing-paragraph">
+              I specialize in creating intuitive and engaging user <br>
+              experiences through thoughtful design and user-centered methodologies. <br />
+              I excel in developing wireframes, prototypes, and interactive UI components using <br>
+              tools like Figma and Adobe XD. My focus on accessibility and performance ensures that my<br>
+              designs not only look great but also function seamlessly across all devices..
+          </p>
+
+          <p class="landing-paragraph landing-paragraph-mobile">
+                I specialize in creating intuitive and engaging user <br>
+              experiences through thoughtful design and user-centered methodologies. <br>
+              I excel in developing wireframes, prototypes, and interactive UI components using <br>
+              tools like Figma and Adobe XD. My focus on accessibility and performance ensures that<br>
+              my designs not only look great but also function seamlessly across all devices
+          </p>
+        </div>
+          <div class="main-bottom-right">
+              <div class="certs-wrapper">
+                  <img
+                          class="certs-1"
+                          src="awslogo.png"
+                          alt="Prem's first and second certificates"
+                  />
+                  <img
+                          class="certs-2"
+                          src="seo.logo.jpeg"
+                          alt="Prem's third and fourth certificates"
+                  />
+              </div>
+
+              <div class="scroll-down-indicator">
+            <span>Scroll Down</span>
+            <img src="/public/media/arrow.svg" alt="" aria-hidden="true" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll with Cursor</title>
+  <style>
+    /* Style for the page */
+    body {
+      height: 1500px; /* Make the page tall enough to scroll */
+    }
+
+    .scroll-indicator {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-down-indicator">
+    <span>Scroll Down</span>
+    <img src="/public/media/arrow.svg" alt="" aria-hidden="true" id="scrollButton" />
+  </div>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Company Page</title>
+  </head>
+  <body>
+      <!-- This is where the text will be displayed -->
+      <div id="companyInfo"></div>
+  
+      <!-- Include the JavaScript files -->
+      <script src="main.js"></script>
+      <script src="scene.js"></script>
+  </body>
+  </html>
+
+
+    <script type="text/javascript" src="./gsap/minified/gsap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./gsap/minified/SplitText.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./gsap/minified/CustomEase.min.js"
+    ></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./scene.js"></script>
+  </body>
+</html>
+
+
+    <!-- 1983 text -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Website</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <!-- Other content of your website -->
+
+    <!-- Adding the company description -->
+    <div id="company-description">
+        Led the design and implementation <br>
+        of a feature-rich shopping cart addition <br>
+        and checkout system in the internal<br>
+        e-commerce testing platform using React,<br>
+        resulting in a 30% increase in better<br>
+        testing functionality before serving production traffic
+    </div>
+
+    <!-- Other content of your website -->
+
+    <script src="main.js"></script>
+    <script src="scene.js"></script>
+    </body>
+    </html>
+
+    <!-- 35+ years text -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Website</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <!-- Other content of your website -->
+
+    <!-- Adding the company description -->
+    <h2>35+ years in the market</h2>
+    <div id="company-35description">
+        Developed a dynamic reporting dashboard<br>
+        with real-time data visualization using <br>
+        Java and AWS Cloud watch,improving <br>
+         managerial decision-making efficiency by 15%
+    </div>
+
+    <!-- Other content of your website -->
+    <script src="main.js"></script>
+    <script src="scene.js"></script>
+    </body>
+    </html>
+
+    <!-- 2,000+ products -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <!-- Other content of your website -->
+
+    <!-- Adding the company description -->
+    <div id="company-2000">
+        Implemented a responsive web design using <br>
+        CSS Flex box and Grid with React Typescript,<br>
+        boosting mobile user engagement by 35%.
+    </div>
+
+    <!-- Other content of your website -->
+    <script src="main.js"></script>
+    <script src="scene.js"></script>
+    </body>
+    </html>
+
+    <!-- 6 team sales managers -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <!-- Other content of your website -->
+
+    <!-- Adding the company description -->
+    <div id="company-6">
+        Automated routine tasks using Python scripts<br>
+        like report generation on user engagement,<br>
+        saving approximately 10 hours per week in manual effort.
+    </div>
+
+    <!-- Other content of your website -->
+    <script src="main.js"></script>
+    <script src="scene.js"></script>
+    </body>
+    </html>
+
+
+    <!-- Linking to JS files -->
+    <script src="scene.js"></script>
+    <script src="main.js"></script>
+    </body>
+    </html>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+         <a href="mailto:vinayaeruva@gmail.com">vinayaeruva@gmail.com</a>
+         <a href=":+14757468162">+1 (475) 746-8162</a>
+    </div>
+    </div>
+</footer>
+

@@ -1,0 +1,132 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.png');
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.experience-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    animation: fadeInTitle 1.5s ease-in-out;
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #3498db;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.timeline-content {
+    background-image: url('background.png');
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.timeline-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #7f8c8d;
+}
+
+.timeline-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: lightgray;
+}
+
+/* Animation when timeline item is in view */
+.timeline-item.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 5%;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .timeline-item:before {
+        left: 5%;
+    }
+
+    .timeline-content {
+        text-align: center;
+    }
+}
+
+/* Title Animation */
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+

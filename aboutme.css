@@ -1,0 +1,140 @@
+/* General styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url('background.png');
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image on the page */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
+
+
+/* Container for the entire about section */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    background-image:url('background.png');
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards; /* Animation for fade-in */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image on the page */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Styles for profile photo */
+.profile-photo img {
+    width: 330px;
+    height: 340px;
+    border-radius: 50%; /* Circular image */
+    border: 3px solid #ddd; /* Optional border */
+    margin-bottom: 20px;
+    animation: bounce 1.5s ease-in-out infinite; /* Bounce animation */
+
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Styles for the text section */
+.about-text h1 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+    align-content: center;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+.about-text h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+    align-content: center;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1.5s ease-in-out forwards;
+    animation-delay: 0.3s; /* Delay for paragraph to slide in */
+}
+/* Hover effect for h1, h2, and p */
+.about-text h1:hover,
+.about-text h2:hover,
+.about-text p:hover {
+    color: #f39c12; /* Changes text color on hover */
+    transform: translateX(0); /* Reset the slide effect */
+    opacity: 1; /* Ensure opacity is fully visible on hover */
+    transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+}
+a {
+    color: white; /* Changes the link color to white */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+a:hover {
+    color: #f39c12; /* Optional: Change to a different color on hover (e.g., vibrant orange) */
+}
+
+
+/* Slide-in animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Optional responsive adjustments */
+@media (max-width: 600px) {
+    .about-container {
+        padding: 10px;
+    }
+
+    .about-text h1 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+}

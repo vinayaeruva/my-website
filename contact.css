@@ -1,0 +1,109 @@
+/* Set background for the entire page */
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: backgroundFadeIn 2s ease-in-out;
+}
+
+/* Flex container for centering */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Contact form styles */
+.contact-form {
+    background-color: lightgrey;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: scaleInForm 1.5s ease forwards;
+}
+
+/* Label styling */
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    display: block; /* Ensures labels are block elements */
+}
+
+/* Input and textarea styling */
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Textarea specific styles */
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Button styling */
+.contact-form button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 12px;
+    color: white;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+/* Animations */
+@keyframes backgroundFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleInForm {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
